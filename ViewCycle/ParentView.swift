@@ -8,11 +8,11 @@ public class ParentView: UIView {
     var activeView: UIView!
     var keys: [String] { return Array(children.keys) }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.clipsToBounds = true
     }
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.clipsToBounds = true
     }
